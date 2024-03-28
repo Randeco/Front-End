@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formularios</title>
+</head>
+<body>
+    <h1>Ejemplo de formularios</h1>
+    <form action="#" method="post">
+        <label for="nombre">Nombre</label>
+        <input type="text" name="nombre" required placeholder="Nombre Apellido"  id="nombre">
+        <br>
+        <label for="pass">Contraseña</label>
+        <input type="password" name="pass" id="pass">
+        <br>
+        <label for="edad">Edad</label>
+        <input type="number" min="0" name="edad" id="edad">
+        <br>
+        <label for="fnacimiento">Fecha de nacimiento</label>
+        <input type="date" name="fnacimiento" id="fnacimiento">
+        <br>
+        <!-- opt sirve para crear opciones y poder seleccionar -->
+        <!-- requiered sirve para que sea obligatorio completar el campo -->
+        <!-- selected sirve para poner una opcion por defecto -->
+        <!-- select sirve como ahi mismo dice para crear una seleccion -->
+        <select required name="pais" id="pais">
+            <option value="">[Seleccione pais]</option>
+            <option selected value="1">Chile</option>
+            <option value="2">Peru</option>
+            <option value="3">Colombia</option>
+            <option value="4">España</option>
+            <option value="5">Portugal</option>
+            <option value="6">Italia</option>
+        </select>
+        <!-- select>optgroup>opt*3 para agruparlos si son demaciadas opciones -->
+        <select name="pais" id="pais">
+            <option value="">[Seleccione un pais]</option>
+            <optgroup label="America">
+                <option value="1">Chile</option>
+                <option value="2">Peru</option>
+                <option value="3">Colombia</option>
+            </optgroup>
+            <optgroup label="Europa">
+                <option value="4">España</option>
+                <option value="5">Portugal</option>
+                <option value="6">Italia</option>
+            </optgroup>
+            </select>
+        </select>
+        <br>
+        <input type="submit" value="Enviar">
+    </form>
+    <br>
+    
+    <a href="index.html">Volver</a>
+</body>
+</html>
