@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Formulario de contacto</h1>
+    <a href="index.html">Volver</a>
+    <form action="#" method="post">
+    <label for="nombre">Nombre</label>
+    <input type="text" name="nombre" required placeholder="" id="nombre">
+    <br>
+    <label for="apellido">Apellido</label>
+    <input type="text" name="apellido" required placeholder="" id="apellido">
+    <br>
+    <hr>
+    <label> Fecha de Nacimiento:</label>
+    <input type="date" name="fechanac" value="@Model.FechaNac" />
+    <br>
+    <label for="genero">Genero: </label>
+    <input type="radio" id="masculino" name="genero" value="masculino">
+    <label for="masculino">Masculino</label>
+    <input type="radio" id="femenino" name="genero" value="femenino">
+    <label for="femenino">Femenino</label>
+    <br>
+    <hr>
+    <label for="name">Asunto</label>
+    <br>
+    <input type="text" id="name" name="user_name">
+    <br>
+    <label for="msg">Comentarios</label>
+    <br>
+    <textarea id="msg" name="user_message"></textarea>
+    <br>
+    <button>ingresar</button>
+
+
+
+
+    </form>
+</body>
+</html>
